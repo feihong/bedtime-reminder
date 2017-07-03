@@ -1,6 +1,8 @@
 # Bedtime Reminder
 
-Send a text message when it's time to go to bed.
+Server-side script that sends a text message to remind you to go to bed. The
+time you choose to send the message is locked to a particular timezone, so daylight
+savings will not disrupt the operation of this script.
 
 ## Installation
 
@@ -11,7 +13,7 @@ pip install -r requirements.txt
 
 ## Config file
 
-config.json
+config.hjson
 
 ```
 {
