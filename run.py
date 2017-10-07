@@ -16,7 +16,7 @@ here = Path(__file__).parent
 
 log_file = here / 'log.txt'
 handlers = [
-    RotatingFileHandler(log_file, maxBytes=1024, backupCount=1),
+    RotatingFileHandler(log_file, maxBytes=100*1024, backupCount=1),
     # logging.StreamHandler(),
 ]
 logging.basicConfig(
