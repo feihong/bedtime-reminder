@@ -70,6 +70,6 @@ if __name__ == '__main__':
     if is_time_to_send(time_str, timezone):
         success = send_text(number, "It's time to go to sleep! You have a busy day tomorrow.")
         if success:
-            loggin.info('Successfully sent text message')
+            logging.info('Successfully sent text message')
     else:
         logging.info('It is not {}, so text message was not sent'.format(time_str))
